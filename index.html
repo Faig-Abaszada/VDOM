@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>VDOM</title>
+</head>
+<body>
+    <div class="flex h-screen items-center justify-center">
+        <div id="app"></div>
+    </div>
+
+    <script type="module">
+        import { h, mount } from './vue-vdom.js';
+        import {vdom6  as vdom} from "./vdom-examples.js";
+
+        // Mounting VDOM --------------------------------
+        const app = document.getElementById('app');
+        mount(vdom, app);
+    </script>
+</body>
+</html>
